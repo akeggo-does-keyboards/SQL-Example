@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.IO;
+using SQLExample.Classes;
 using UIKit;
 
 namespace SQLExample
@@ -15,6 +16,22 @@ namespace SQLExample
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+
+            buttonSave.TouchUpInside += ButtonSave_TouchUpInside; //call method when button is click/touched
+        }
+
+        void ButtonSave_TouchUpInside(object sender, EventArgs e)
+        {
+            string db_name = "books_db.sqlite";
+            string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string db_path = Path.Combine(folderPath, db_name); //set the database path file path to folder & file name
+
+            Book newBook = new Book() { Author = txtBookAuthor.Text, Name = txtBookTitle.Text };
+
+            if (DatabaseHelper.Insert(ref newBook, db_path))
+                Console.WriteLine("SUCCESS");
+            else
+                Console.WriteLine("FAILURE"); //this will log SUCCESS/FAILURE to the console
         }
 
         public override void DidReceiveMemoryWarning()

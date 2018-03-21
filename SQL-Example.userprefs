@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{E04828B8-9C2D-4501-B5C3-426CBA2945DD}|Default">
-  <MonoDevelop.Ide.ItemProperties.SQL-Example>
+  <MonoDevelop.Ide.ItemProperties.SQL-Example PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9652DD4B-7210-4BF3-8319-A14D264C7ABF" automaticSigning="False">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.SQL-Example>
-  <MonoDevelop.Ide.Workbench ActiveDocument="SQL-Example/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SQL-Example/ViewController.cs">
     <Files>
-      <File FileName="SQL-Example/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="SQL-Example/AppDelegate.cs" Line="16" Column="17" />
       <File FileName="SQL-Example/Main.storyboard" />
+      <File FileName="SQL-Example/BooksTableViewsController.cs" Line="1" Column="1" />
+      <File FileName="SQL-Example/Classes/Book.cs" Line="18" Column="1" />
+      <File FileName="SQL-Example/Classes/DatabaseHelper.cs" Line="35" Column="10" />
+      <File FileName="SQL-Example/ViewController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
