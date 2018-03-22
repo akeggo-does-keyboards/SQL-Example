@@ -14,5 +14,8 @@ namespace SQLExample
     [Register ("BooksTableViewsController")]
     partial class BooksTableViewsController
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }
