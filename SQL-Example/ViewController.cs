@@ -29,7 +29,8 @@ namespace SQLExample
             Book newBook = new Book() { Author = txtBookAuthor.Text, Name = txtBookTitle.Text };
 
             if (DatabaseHelper.Insert(ref newBook, db_path))
-                Console.WriteLine("SUCCESS");
+                //Console.WriteLine("SUCCESS");
+                NavigationController.PopToRootViewController(true); //After adding to the database, return vuew to root
             else
                 Console.WriteLine("FAILURE"); //this will log SUCCESS/FAILURE to the console
         }
